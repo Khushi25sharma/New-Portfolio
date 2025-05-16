@@ -37,39 +37,39 @@
 
 
   <!-- Header -->
-  <header class="w-full p-6">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Khushi Sharma</h1>
+  <header class="w-full py-4 px-6 bg-gray-100 dark:bg-gray-900 shadow-sm">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-800 dark:text-gray-100">Khushi Sharma</h1>
       
       <!-- Navigation Menu (desktop) -->
       <nav id="mobile-menu" class="hidden md:flex flex-1 justify-center space-x-8 mx-8">
-        <a href="#home" class="hover:underline">Home</a>
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#portfolio" class="hover:underline">Portfolio</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#home" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Home</a>
+        <a href="#about" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">About</a>
+        <a href="#services" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Services</a>
+        <a href="#portfolio" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Portfolio</a>
+        <a href="#contact" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Contact</a>
       </nav>
 
       <!-- Right side buttons -->
       <div class="flex items-center space-x-4">
         <!-- Hamburger Menu Button (visible on mobile) -->
-        <button id="mobile-menu-button" class="md:hidden p-2">
+        <button id="mobile-menu-button" class="md:hidden p-2 text-gray-700 dark:text-gray-200">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
-        <button id="dark-toggle" class="p-2">🌓</button>
+        <button id="dark-toggle" class="p-2 text-gray-700 dark:text-gray-200">🌓</button>
       </div>
     </div>
 
     <!-- Mobile Navigation Menu (hidden by default) -->
-    <div id="mobile-nav" class="hidden md:hidden w-full bg-white dark:bg-black shadow-lg mt-2 rounded-lg">
+    <div id="mobile-nav" class="hidden md:hidden w-full bg-gray-100 dark:bg-gray-900 shadow-lg mt-2 rounded-lg">
       <div class="flex flex-col p-4 space-y-4">
-        <a href="#home" class="hover:underline">Home</a>
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#portfolio" class="hover:underline">Portfolio</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#home" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Home</a>
+        <a href="#about" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">About</a>
+        <a href="#services" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Services</a>
+        <a href="#portfolio" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Portfolio</a>
+        <a href="#contact" class="hover:text-gray-600 dark:hover:text-gray-300 text-gray-700 dark:text-gray-200 transition-colors">Contact</a>
       </div>
     </div>
   </header>
@@ -112,12 +112,14 @@
 
 
   <!-- Services -->
-  <section id="services" class="p-8 fade-in">
-    <h3 class="text-2xl font-bold mb-4">Services</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="p-4 border rounded-xl shadow hover:shadow-xl transition">Website Development</div>
-      <div class="p-4 border rounded-xl shadow hover:shadow-xl transition">App Development</div>
-      <div class="p-4 border rounded-xl shadow hover:shadow-xl transition">AI-Based Models</div>
+  <section id="services" class="p-8 bg-gray-100 dark:bg-gray-900 fade-in">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition text-gray-700 dark:text-gray-200">Website Development</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition text-gray-700 dark:text-gray-200">App Development</div>
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-xl transition text-gray-700 dark:text-gray-200">AI-Based Models</div>
+      </div>
     </div>
   </section>
 
@@ -133,10 +135,12 @@
 
   <!-- About -->
   <section id="about" class="p-8 bg-gray-100 dark:bg-gray-900 fade-in">
-    <h3 class="text-2xl font-bold mb-4">About Me</h3>
-    <p class="max-w-xl">
-      I'm Khushi Sharma, a passionate AI & ML Engineer who thrives at the intersection of data, innovation, and social good...
-    </p>
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">About Me</h3>
+      <p class="max-w-xl text-gray-700 dark:text-gray-200">
+        I'm Khushi Sharma, a passionate AI & ML Engineer who thrives at the intersection of data, innovation, and social good...
+      </p>
+    </div>
   </section>
 
   <!-- Contact -->
